@@ -20,7 +20,7 @@ public class middleNode {
         System.out.println("null");
     }
 
-    public ListNode middleNode() {
+    public ListNode MiddleNode() {
         if (head == null) {
             return null;
         }
@@ -48,6 +48,6 @@ public class middleNode {
         thirdNode.next = forthNode;
 
         mn.dispaly();
-        System.out.println("middle node is -> " + mn.middleNode().data);
+        System.out.println("middle node is -> " + mn.MiddleNode().data);
     }
 }
