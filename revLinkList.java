@@ -1,4 +1,3 @@
-//not solved yeat
 public class revLinkList {
     private static class ListNode {
         private int data;
@@ -49,9 +48,7 @@ public class revLinkList {
         third.next = forth;
 
         rll.display(rll.head);
-        rll.revarceNode();
         ListNode revListHead = rll.revarceNode();
-        rll.head = revListHead;
         rll.display(revListHead);
     }
 }
