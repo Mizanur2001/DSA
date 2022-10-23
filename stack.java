@@ -25,8 +25,8 @@ public class stack {
             throw new EmptyStackException();
         }
 
-        top = top.next;
         result = top.data;
+        top = top.next;
         return result;
     }
 
@@ -45,11 +45,12 @@ public class stack {
         stack.push(11);
 
         System.out.println(stack.keep());
-        stack.pop();
-        stack.pop();
-        stack.pop();
-        // stack.pop();
-        System.out.println(stack.keep());
+        System.out.println("deleted --> "+stack.pop());
+        System.out.println("deleted --> "+stack.pop());
+        System.out.println("deleted --> "+stack.pop());
+        System.out.println("deleted --> "+stack.pop());
+        
+        // System.out.println(stack.keep());
     }
 
 }
